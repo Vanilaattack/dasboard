@@ -18,6 +18,14 @@ class DashboardController extends Controller
         return view('admin.dashboard', compact('registrations', 'aspirations', 'totalStudents'));
     }
 
+    /**
+     * Halaman selamat datang setelah login admin.
+     */
+    public function welcome()
+    {
+        return view('admin.welcome');
+    }
+
     public function showRegistration(Registration $registration)
     {
         $registration->load('user');

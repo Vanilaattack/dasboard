@@ -19,6 +19,15 @@ class DatabaseSeeder extends Seeder
             'role'     => 'admin',
         ]);
 
+        // Tambah admin baru di sini:
+        // User::create([
+        //     'name'     => 'Admin Kedua',
+        //     'nim'      => null,
+        //     'email'    => 'admin2@himpunan.ac.id',
+        //     'password' => Hash::make('password123'),
+        //     'role'     => 'admin',
+        // ]);
+
         // Buat akun Mahasiswa contoh
         User::create([
             'name'     => 'Budi Santoso',

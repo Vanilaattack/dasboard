@@ -15,4 +15,12 @@ class DashboardController extends Controller
 
         return view('student.dashboard', compact('user', 'registration', 'aspirations'));
     }
+
+    /**
+     * Halaman selamat datang setelah login mahasiswa.
+     */
+    public function welcome()
+    {
+        return view('student.welcome');
+    }
 }

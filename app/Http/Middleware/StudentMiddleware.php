@@ -12,7 +12,7 @@ class StudentMiddleware
     {
         if (!auth()->check() || !auth()->user()->isStudent()) {
             if (auth()->check() && auth()->user()->isAdmin()) {
-                return redirect()->route('admin.dashboard');
+                return redirect()->route('admin.welcome');
             }
             abort(403, 'Akses ditolak.');
         }
